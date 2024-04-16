@@ -34,11 +34,11 @@ Vyhodnocení vítěze: Po skončení tahů hráčů a dealera se porovnají celk
 
 Výplata: Pokud hráč vyhraje, obvykle dostane sázku v poměru 1:1. Výjimkou je situace, kdy hráč dostane Blackjack (21 body získané z dvou prvních karet, tj. eso a karta s hodnotou 10), v takovém případě je obvykle výplata 3:2 
 
- 
+## Prostředky
 
-## Jazyk: Python 
+Jazyk: Python 
 
-## Program: Visual Studio Code 
+Program: Visual Studio Code 
 
 ## Funkce hry
 
