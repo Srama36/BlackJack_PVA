@@ -40,7 +40,7 @@ Výplata: Pokud hráč vyhraje, obvykle dostane sázku v poměru 1:1. Výjimkou 
 
 ## Program: Visual Studio Code 
 
-
+## Funkce hry
 
 Start menu: Konzole zobrazí první otázku jestli: “Chcete hrát?”. Pokud hráč napíše “ano” spustí se hra. Pokud napíše “ne” konzole se vypne.  
 
