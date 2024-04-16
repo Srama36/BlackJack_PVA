@@ -1,12 +1,12 @@
 # Blackjack 
 
-## Úvod:  
+## Úvod
 
 Rozhodl jsem se vytvořit jednoduchou karetní hru Blackjack. Hra poběží v konzoli a zobrazení karet bude textové.  
 
  
 
-## Co je to Blackjack:  
+## Co je to Blackjack
 
 Blackjack je karetní hra, která se hraje proti dealerovi a cílem je dosáhnout karet s celkovou hodnotou blízkou nebo rovnající se 21, ale nepřesahující ji. Hráči mají za úkol porazit dealera, aniž by přesáhli 21 bodů. Pokud hráč přesáhne 21 bodů, ztrácí svou sázku. 
 
@@ -56,7 +56,7 @@ Konec hry: Po dokončení kola se hra hráče zeptá, jestli chce pokračovat. P
 
  
 
-## Počty karet:  
+## Počty karet
 
 Karty s číslem 2–10 se rovnají číslu které je na nich vyobrazené 
 
