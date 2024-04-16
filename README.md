@@ -6,7 +6,7 @@ Rozhodl jsem se vytvořit jednoduchou karetní hru Blackjack. Hra poběží v ko
 
  
 
-Co je to Blackjack:  
+## Co je to Blackjack:  
 
 Blackjack je karetní hra, která se hraje proti dealerovi a cílem je dosáhnout karet s celkovou hodnotou blízkou nebo rovnající se 21, ale nepřesahující ji. Hráči mají za úkol porazit dealera, aniž by přesáhli 21 bodů. Pokud hráč přesáhne 21 bodů, ztrácí svou sázku. 
 
@@ -36,11 +36,11 @@ Výplata: Pokud hráč vyhraje, obvykle dostane sázku v poměru 1:1. Výjimkou 
 
  
 
-Jazyk: Python 
+## Jazyk: Python 
 
-Program: Visual Studio Code 
+## Program: Visual Studio Code 
 
- 
+
 
 Start menu: Konzole zobrazí první otázku jestli: “Chcete hrát?”. Pokud hráč napíše “ano” spustí se hra. Pokud napíše “ne” konzole se vypne.  
 
@@ -56,7 +56,7 @@ Konec hry: Po dokončení kola se hra hráče zeptá, jestli chce pokračovat. P
 
  
 
-Počty karet:  
+## Počty karet:  
 
 Karty s číslem 2–10 se rovnají číslu které je na nich vyobrazené 
 
@@ -66,6 +66,6 @@ Karta A se rovná buď 1 nebo 11 podle potřeby
 
  
 
-Závěr:  
+## Závěr:  
 
 Blackjack je relativně komplexní hra a programování ji by mě mělo naučit základy programování v pythonu.   
