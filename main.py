@@ -5,7 +5,7 @@ class Card:
         self.suit = suit
         self.rank = rank
     def __str__(self):
-        return f"{self.rank['rank']} of {self.suit}"
+        return f"{self.rank['rank']}{self.suit}"
 
 class Deck:
     def __init__(self):
@@ -86,18 +86,14 @@ class Hand:
 
 class Game:
     def play(self):
-        game_number = 0
-        games_to_play = 0
 
-        while games_to_play <= 0:
-            try:
-                games_to_play = int(input("How many games do you want to play? "))
-            except:
-                print("You must enter a number.")
+        while True:
+            answer = input("\nChcete hrát?: \n")
 
-        while game_number < games_to_play:
-            game_number += 1
-
+            if answer == "ne":
+                break
+            
+                                     
             deck = Deck()
             deck.shuffle()
 
@@ -110,7 +106,6 @@ class Game:
 
             print()
             print("*" * 30)
-            print(f"Game {game_number} of {games_to_play}")
             print("*" * 30)
             player_hand.display()
             dealer_hand.display()
