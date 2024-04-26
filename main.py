@@ -150,27 +150,27 @@ class Game:
     def check_winner(self, player_hand, dealer_hand, game_over=False):
         if not game_over:
             if player_hand.get_value() > 21:
-                print("You busted. Dealer wins! 😭")
+                print("Prohrál jsi. Dealer vítězí!")
                 return True
             elif dealer_hand.get_value() > 21:
-                print("Dealer busted. You win! 😀")
+                print("Vyhrál jsi!")
                 return True
             elif dealer_hand.is_blackjack() and player_hand.is_blackjack():
-                print("Both players have blackjack! Tie! 😑")
+                print("Oba máte blackjack. Je to remíza!")
                 return True
             elif player_hand.is_blackjack():
-                print("You have blackjack. You win! 😀")
+                print("Máš blackjack. Vyhrál jsi!")
                 return True
             elif dealer_hand.is_blackjack():
-                print("Dealer has blackjack. Dealer wins! 😭")
+                print("Dealer má blackjack. Dealer vítězí!")
                 return True
         else:
             if player_hand.get_value() > dealer_hand.get_value():
-                print("You win! 😀")
+                print("Vyhrál jsi!")
             elif player_hand.get_value() == dealer_hand.get_value():
-                print("Tie! 😑")
+                print("Je to remíza!")
             else:
-                print("Dealer wins. 😭")
+                print("Dealer vítězí!")
             return True
         return False
 
