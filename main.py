@@ -118,7 +118,7 @@ class Game:
                 choice = input("Prosím vyberte 'Hit' nebo 'Stand': ").lower()
                 print()
                 while choice not in ["h", "s", "hit", "stand"]:
-                    choice = input("Prosím vyberte 'Hit' nebo 'Stand' (H/S) ").lower()
+                    choice = input("Prosím vyberte 'Hit' nebo 'Stand' (Stačí napsat H nebo S) ").lower()
                     print()
                 if choice in ["hit", "h"]:
                     player_hand.add_card(deck.deal(1))
@@ -145,7 +145,7 @@ class Game:
 
             self.check_winner(player_hand, dealer_hand, True)
 
-        print("\nThanks for playing!")
+        print("\nDíky že jste hráli!")
 
     def check_winner(self, player_hand, dealer_hand, game_over=False):
         if not game_over:
