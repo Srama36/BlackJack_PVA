@@ -72,16 +72,16 @@ class Hand:
         return self.get_value() == 21
 
     def display(self, show_all_dealer_cards=False):
-        print(f'''{"Dealer's" if self.dealer else "Your"} hand:''')
+        print(f'''{"Dealerova" if self.dealer else "tvoje"} ruka:''')
         for index, card in enumerate(self.cards):
             if index == 0 and self.dealer \
             and not show_all_dealer_cards and not self.is_blackjack():
-                print("hidden")
+                print("skrytá karta")
             else:
                 print(card)
 
         if not self.dealer:
-            print("Value:", self.get_value())
+            print("Hodnota:", self.get_value())
         print()
 
 class Game:
@@ -115,10 +115,10 @@ class Game:
 
             choice = ""
             while player_hand.get_value() < 21 and choice not in ["s", "stand"]:
-                choice = input("Please choose 'Hit' or 'Stand': ").lower()
+                choice = input("Prosím vyberte 'Hit' nebo 'Stand': ").lower()
                 print()
                 while choice not in ["h", "s", "hit", "stand"]:
-                    choice = input("Please enter 'Hit' or 'Stand' (or H/S) ").lower()
+                    choice = input("Prosím vyberte 'Hit' nebo 'Stand' (H/S) ").lower()
                     print()
                 if choice in ["hit", "h"]:
                     player_hand.add_card(deck.deal(1))
@@ -140,8 +140,8 @@ class Game:
                 continue
 
             print("Final Results")
-            print("Your hand:", player_hand_value)
-            print("Dealer's hand:", dealer_hand_value)
+            print("Tvoje karty:", player_hand_value)
+            print("Dealerovy karty:", dealer_hand_value)
 
             self.check_winner(player_hand, dealer_hand, True)
 
